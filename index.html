@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Verificador de Força de Senha</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="containerMain">
-    <h1>Verificador de Força de Senha</h1>
-    <label for="password">Senha:</label>
-    <input type="password" id="password" oninput="checkPasswordStrength()">
-    <br>
-    <input type="button" id="showPassword" value="Show" onclick="togglePasswordVisibility()">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="containerMain">
+        <h1>Verificador de Força de Senha</h1>
+        
+        <div  id="campPassowrd">
+          <input
+          type="password"
+          id="password"
+          placeholder="Senha:"
+          oninput="checkPasswordStrength()"
+        />
+        <br />
+        <input
+          type="button"
+          id="showPassword"
+          value="Show"
+          onclick="togglePasswordVisibility()"
+        />
+        </div>
+        
 
-    <br>
-    <p id="strengthText"><span id="strengthValue"></span></p>
+        <br />
+        <p id="strengthText"><span id="strengthValue"></span></p>
 
-  </div>
-  <div class="barVerif"></div>
-    
+        <div id="barPasswordDefault">
+          <div id="barPassword"></div>
+        </div>
+      </div>
+      
+    </main>
+
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

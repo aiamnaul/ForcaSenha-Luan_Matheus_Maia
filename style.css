@@ -1,9 +1,61 @@
-*{
+* {
   padding: 0;
-
 }
 
-#containerMain{
+body{
+  background-color: #222123;
+  display: flex;
+}
+
+main {
+  display: flex;
+  background-color: #353835;
+  margin-left: 35%;
+  margin-top: 15%;
+  width: 30%;
+  border-radius: 10px;
+  height: 40%;
+  padding: 20px;
+}
+
+.containerMain {
   position: center;
-  margin-left: 30%;
+  
+  padding: 5px !important;
+  
+}
+
+#campPassowrd {
+  display: flex;
+  padding: 2%;
+  background-color: #222123;
+  height: 30px;
+  width: 55%;
+  align-items: center;
+  margin: auto;
+}
+
+#password{
+  background-color: #222123;
+  width: 70%;
+  box-shadow: none;
+  color: white;
+  text-decoration: none;
+}
+
+#barPasswordDefault {
+  width: 400px;
+  height: 5px;
+
+  background-color: 353835;
+}
+
+#barPassword {
+  width: 0%;
+  height: 5px;
+  border-radius: 5px;
+
+  background-color: red;
+
+  transition: 0.2s ease-in-out;
 }
